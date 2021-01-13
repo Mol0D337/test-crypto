@@ -73,13 +73,13 @@
       webSocketInfo () {
         if (Object.keys(this.list).length && this.list[this.currentItem?.CoinInfo.Name]) {
           return {
-            price: this.list[this.currentItem?.CoinInfo.Name].PRICE,
-            LASTVOLUMETO: this.list[this.currentItem?.CoinInfo.Name].LASTVOLUMETO,
-            fromsymbol: this.list[this.currentItem?.CoinInfo.Name].FROMSYMBOL,
-            LASTVOLUME: this.list[this.currentItem?.CoinInfo.Name].LASTVOLUME,
-            VOLUME24HOUR: this.list[this.currentItem?.CoinInfo.Name].VOLUME24HOUR,
-            VOLUMEDAY: this.list[this.currentItem?.CoinInfo.Name].VOLUMEDAY,
-            VOLUMEHOUR: this.list[this.currentItem?.CoinInfo.Name].VOLUMEHOUR,
+            price: this.list[this.currentItem.CoinInfo.Name].PRICE,
+            LASTVOLUMETO: this.list[this.currentItem.CoinInfo.Name].LASTVOLUMETO,
+            fromsymbol: this.list[this.currentItem.CoinInfo.Name].FROMSYMBOL,
+            LASTVOLUME: this.list[this.currentItem.CoinInfo.Name].LASTVOLUME,
+            VOLUME24HOUR: this.list[this.currentItem.CoinInfo.Name].VOLUME24HOUR,
+            VOLUMEDAY: this.list[this.currentItem.CoinInfo.Name].VOLUMEDAY,
+            VOLUMEHOUR: this.list[this.currentItem.CoinInfo.Name].VOLUMEHOUR,
           };
         } else {
           return { price: '-',
